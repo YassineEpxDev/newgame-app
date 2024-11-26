@@ -8,6 +8,7 @@ interface FetchResponse<T>{
     results:T[];
 };
 
+
 const useData = <T>(endPoint: string, requestConfig?: AxiosRequestConfig, deps?: any[]) =>{
 
     
