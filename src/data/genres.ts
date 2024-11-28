@@ -229,7 +229,7 @@ export default [
       "name": "Shooter",
       "slug": "shooter",
       "games_count": 59532,
-      "image_background": "https://media.rawg.io/media/games/120/1201a40e4364557b124392ee50317b99.jpg",
+      "image_background": "https://media.rawg.io/media/games/12th0/1201a40e4364557b124392ee50317b99.jpg",
       "games": [
         {
           "id": 4200,
