@@ -3,6 +3,7 @@ import React from 'react'
 import { Game } from '../hooks/useGames'
 import getCroppedImageUrl from '../services/image-urls'
 import CriticScore from './CriticScore'
+import Emoji from './Emoji'
 import PlatformIconList from './PlatformIconList'
 
 interface Props{
@@ -13,6 +14,8 @@ interface Props{
 
 const GameCard = ({game}:Props) => {
   return (
+    <>
+    
     <Card >
         <Image  src={getCroppedImageUrl(game.background_image)}/>
     <CardBody>
@@ -23,10 +26,11 @@ const GameCard = ({game}:Props) => {
         <PlatformIconList platforms={game.parent_platforms.map(p => p.platform)}/>
         <CriticScore score={game.metacritic}/>
         </HStack>
-        <Heading fontSize='2*l'>{game.name}</Heading>
+        <Heading fontSize='2*l'>{game.name} <Emoji  rating={game.rating_top}/></Heading>
         
     </CardBody>    
     </Card>
+    </>
   )
 }
 
